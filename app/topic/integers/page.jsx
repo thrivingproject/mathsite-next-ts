@@ -17,7 +17,7 @@ export default function Page() {
         </p>
         <section>
           <h3>Examples</h3>
-          <p>{"`ZZ` = {..., -2, -1, 0 , 1, 2, ...}"}</p>
+          <p>{"`ZZ = {..., -2, -1, 0 , 1, 2, ...}`"}</p>
         </section>
       </article>
     </MathJax>
