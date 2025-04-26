@@ -16,8 +16,9 @@ export default function Page() {
           <Link href={"/topic/rational_numbers"}>rational numbers</Link>.
         </p>
         <section>
-          <h3>Examples</h3>
-          <p></p>
+          <h3>Properties</h3>
+          <p>{"`\\text{positive number} + \\text{positive number} = \\text{positive number }`"}</p>
+          <p>{"`\\text{negative number} - \\text{negative number} = \\text{negative number}`"}</p>
         </section>
       </article>
     </MathJax>
