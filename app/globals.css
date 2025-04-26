@@ -1,4 +1,28 @@
 /* Increase font-size of all text */
 html {
-  font-size: 150%;  
+  font-size: 150%;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #111;
+    color: #eee;
+  }
+
+  a {
+    color: #66aaff;
+  }
+}
+
+/* Light mode (optional, since it’s the default) */
+@media (prefers-color-scheme: light) {
+  body {
+    background: #fff;
+    color: #111;
+  }
+
+  a {
+    color: #0066cc;
+  }
 }
