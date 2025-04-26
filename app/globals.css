@@ -1,6 +1,23 @@
 /* Increase font-size of all text */
 html {
-  font-size: 150%;
+  font-size: 175%;
+}
+
+body {
+  padding: 1rem;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+p,
+li,
+a {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  word-spacing: 3px;
 }
 
 /* Dark mode */
@@ -25,4 +42,12 @@ html {
   a {
     color: #0066cc;
   }
+}
+
+ul {
+  line-height: 2;
+}
+
+li {
+  list-style: circle;
 }
