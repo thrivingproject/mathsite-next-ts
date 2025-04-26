@@ -3,9 +3,9 @@ import Link from "next/link";
 export default function Layout({ children }) {
   return (
     <>
-      <header>
+      <nav>
         <Link href={"/"}>Home</Link>
-      </header>
+      </nav>
       <main>{children}</main>
     </>
   );
