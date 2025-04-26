@@ -16,11 +16,24 @@ export default function Home() {
         <ul>
           {entries.map(slug => (
             <li key={slug}>
-              <Link href={`/topic/${slug}`}>{slug.replace(/-/g, " ")}</Link>
+              <Link href={`/topic/${slug}`}>{prettifyDirName(slug)}</Link>
             </li>
           ))}
         </ul>
       </main>
     </div>
   );
+}
+
+/**
+ * Prettifies the directory name to a title-cased label.
+ * @param {string} dirName – the directory name
+ * @returns {string} – the prettified, title-cased label
+ */
+function prettifyDirName(dirName) {
+  return dirName
+    .replace(/_/g, " ")
+    .split(" ")
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+    .join(" ");
 }
