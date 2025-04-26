@@ -1,11 +1,9 @@
-import Link from "next/link";
+import Nav from "@/components/Nav";
 
 export default function Layout({ children }) {
   return (
     <>
-      <nav>
-        <Link href={"/"}>Home</Link>
-      </nav>
+      <Nav />
       <main>{children}</main>
     </>
   );
