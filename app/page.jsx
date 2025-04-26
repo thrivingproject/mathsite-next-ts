@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div>
       <main>
-        <h1>All Entries</h1>
+        <h1>All Topics</h1>
         <ul>
           {entries.map(slug => (
             <li key={slug}>
