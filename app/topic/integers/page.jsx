@@ -11,7 +11,7 @@ export default function Page() {
           including 0. The symbol for the <Link href={"/topic/set"}>set</Link> of integers is{" "}
           {"`ZZ`"}. It is a <Link href={"/topic/subset"}>subset</Link> of the{" "}
           <Link href={"/topic/set"}>set</Link> of{" "}
-          <Link href={"/topic/rational-numbers"}>rational numbers</Link> rational numbers {"`QQ`"}.
+          <Link href={"/topic/rational_numbers"}>rational numbers</Link> rational numbers {"`QQ`"}.
         </p>
         <h2>Examples</h2>
       </article>
