@@ -13,7 +13,7 @@ export default function Page() {
           <h3>Examples</h3>
           <p>
             The set of{" "}
-            <Link href={"/topic/integers"}>integers</Link>, {"`ZZ` = {..., -2, -1, 0 , 1, 2, ...}"}.
+            <Link href={"/topic/integers"}>integers</Link>, {"`ZZ = {..., -2, -1, 0 , 1, 2, ...}`"}.
           </p>
         </section>
       </article>
