@@ -52,3 +52,7 @@ ul {
 li {
   list-style: circle;
 }
+
+td {
+  padding: 0 2rem 1rem 0;
+}
