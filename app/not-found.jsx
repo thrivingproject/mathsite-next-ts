@@ -1,6 +1,4 @@
-"use client";
-
-import Nav from "@/components/Nav";
+import Nav from "@/app/components/Nav";
 
 export default function NotFound() {
   return (
