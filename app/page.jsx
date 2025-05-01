@@ -1,12 +1,12 @@
-import fs from "fs";
+import fileSystem from "fs";
 import path from "path";
 import Link from "next/link";
 
 export default function Home() {
   const wikiDir = path.join(process.cwd(), "app", "topic");
-  const entries = fs
+  const entries = fileSystem
     .readdirSync(wikiDir, { withFileTypes: true })
-    .filter(d => d.isDirectory() && fs.existsSync(path.join(wikiDir, d.name, "page.jsx")))
+    .filter(d => d.isDirectory() && fileSystem.existsSync(path.join(wikiDir, d.name, "page.jsx")))
     .map(d => d.name);
 
   return (
