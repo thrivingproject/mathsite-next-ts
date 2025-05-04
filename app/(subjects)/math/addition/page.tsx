@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { MathTopic } from "../../../../lib/topics";
 
 export default function Page() {
   return (
@@ -9,7 +10,7 @@ export default function Page() {
       <p>
         A binary operation denoted by the symbol {"`+`"}. The result of adding one number to
         another is called a sum. Adding a negative number is the same as{" "}
-        <Link href={`/math/subtraction`}>subtracting</Link> it.
+        <Link href={MathTopic.getPath("subtraction")}>subtracting</Link> it.
       </p>
       <section>
         <h3>Properties</h3>
@@ -44,9 +45,9 @@ export default function Page() {
       </section>
       <section>
         <h4>See also</h4>
-        <Link href={"/topic/additive_inverse"}>additive inverse</Link>
+        <Link href={MathTopic.getPath("additiveInverse")}>additive inverse</Link>
         <br />
-        <Link href={"/topic/subtraction"}>subtraction</Link>
+        <Link href={MathTopic.getPath("subtraction")}>subtraction</Link>
       </section>
     </article>
   );

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { MathTopic } from "../../../../lib/topics";
 
 export default function Page() {
   return (
@@ -13,9 +14,9 @@ export default function Page() {
       </section>
       <section>
         <h4>See also</h4>
-        <Link href={"/math/addition"}>addition</Link>
+        <Link href={MathTopic.getPath("addition")}>addition</Link>
         <br />
-        <Link href={"/math/additive_inverse"}>additive inverse</Link>
+        <Link href={MathTopic.getPath("additiveInverse")}>additive inverse</Link>
       </section>
     </article>
   );

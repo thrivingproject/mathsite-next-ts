@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { MathTopic } from "../../../../lib/topics";
 
 export default function Page() {
   return (
@@ -7,10 +8,11 @@ export default function Page() {
         <h2>Real numbers</h2>
       </header>
       <p>
-        The <Link href={`/math/set_union`}>union</Link> of the <Link href={`/math/set`}>set</Link>{" "}
-        of <Link href={"/math/irrational_numbers"}>irrational numbers</Link> and the{" "}
-        <Link href={"/math/set"}>set</Link> of{" "}
-        <Link href={"/math/rational_numbers"}>rational numbers</Link>.
+        The <Link href={MathTopic.getPath("setUnion")}>union</Link> of the{" "}
+        <Link href={MathTopic.getPath("set")}>set</Link> of{" "}
+        <Link href={MathTopic.getPath("irrationalNumbers")}>irrational numbers</Link> and the{" "}
+        <Link href={MathTopic.getPath("set")}>set</Link> of{" "}
+        <Link href={MathTopic.getPath("rationalNumbers")}>rational numbers</Link>.
       </p>
       <section>
         <h3>Properties</h3>

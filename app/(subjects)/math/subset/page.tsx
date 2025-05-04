@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { MathTopic } from "../../../../lib/topics";
 
 export default function Page() {
   return (
@@ -7,9 +8,9 @@ export default function Page() {
         <h2>Subset</h2>
       </header>
       <p>
-        A <Link href={"/math/set"}>set</Link> consisting entirely of elements that are members of
-        another <Link href={"/math/set"}>set</Link>. The mathematical symbol for subset is{" "}
-        {"`sube`"}.
+        A <Link href={MathTopic.getPath("set")}>set</Link> consisting entirely of elements that are
+        members of another <Link href={MathTopic.getPath("set")}>set</Link>. The mathematical
+        symbol for subset is {"`sube`"}.
       </p>
       <section>
         <h3>Example</h3>
