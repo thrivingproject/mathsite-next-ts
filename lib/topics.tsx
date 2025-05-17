@@ -1,34 +1,23 @@
 export class Electromagnetism {
-  static readonly dir = "electromagnetism";
-
-  static readonly topics = {
-    current: "current",
-    electricPotential: "electric_potential",
-    electricCharge: "electrical_charge",
-    electricalPhenomena: "electrical_phenomena",
-    elementaryCharge: "elementary_charge",
-    voltage: "voltage",
-    electricEnergy: "electric_energy",
-    resistance: "resistance",
-  };
-
-  static getPath(topicKey: keyof typeof this.topics) {
-    return `/${this.dir}/${this.topics[topicKey]}`;
-  }
+  private static readonly dir = "electromagnetism";
+  static readonly current = `/${this.dir}/current`;
+  static readonly charge = `/${this.dir}/electric_charge`;
+  static readonly electricPotential = `/${this.dir}/electric_potential`;
+  static readonly electricPotentialEnergy = `/${this.dir}/electric_potential_energy`;
+  static readonly electricalPhenomena = `/${this.dir}/electrical_phenomena`;
+  static readonly electricField = `/${this.dir}/electric_field`;
+  static readonly elementaryCharge = `/${this.dir}/elementary_charge`;
+  static readonly ohmsLaw = `/${this.dir}/ohms_law`;
+  static readonly resistance = `/${this.dir}/resistance`;
+  static readonly testCharge = `/${this.dir}/test_charge`;
+  static readonly voltage = `/${this.dir}/voltage`;
 }
 
 export class Mechanics {
-  static readonly dir = "mechanics";
-
-  static readonly topics = {
-    work: "work",
-    force: "force",
-    energy: "energy",
-  };
-
-  static getPath(topicKey: keyof typeof this.topics) {
-    return `/${this.dir}/${this.topics[topicKey]}`;
-  }
+  private static readonly dir = "mechanics";
+  static readonly energy = `/${this.dir}/energy`;
+  static readonly force = `/${this.dir}/force`;
+  static readonly work = `/${this.dir}/work`;
 }
 
 export class MathTopic {

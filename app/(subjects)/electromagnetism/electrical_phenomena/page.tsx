@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Electromagnetism } from "@/lib/topics";
 
 export default function Page() {
   return (
@@ -18,7 +19,7 @@ export default function Page() {
           {/* Charge */}
           <tr>
             <td>
-              <Link href={"/topic/electrical_charge"}>Electrical Charge</Link>
+              <Link href={Electromagnetism.charge}>Electrical Charge</Link>
             </td>
             <td>{"`q`"}</td>
             <td>
@@ -29,7 +30,7 @@ export default function Page() {
           {/* Current */}
           <tr>
             <td>
-              <Link href={"/topic/current"}>Current</Link>
+              <Link href={Electromagnetism.current}>Current</Link>
             </td>
             <td>{"`I, i`"}</td>
             <td>
@@ -40,7 +41,7 @@ export default function Page() {
           {/* Voltage */}
           <tr>
             <td>
-              <Link href={"/topic/voltage"}>Voltage</Link>
+              <Link href={Electromagnetism.voltage}>Voltage</Link>
             </td>
             <td>{"`V, v`"}</td>
             <td>
@@ -51,7 +52,7 @@ export default function Page() {
           {/* Resistance */}
           <tr>
             <td>
-              <Link href={"/topic/resistance"}>Resistance</Link>
+              <Link href={Electromagnetism.resistance}>Resistance</Link>
             </td>
             <td>{"`R`"}</td>
             <td>
